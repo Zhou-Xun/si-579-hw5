@@ -173,7 +173,7 @@ showSynonymsButton.addEventListener('click', e => {
             wordOutput.append(group_lyst)
             for (let item in data) {
                 const {word} = data[item];
-                group_lyst.innerHTML += `<li>${word} &nbsp <button class="saved_button" style="color: white; background-color: green">(Save)</button></li>`;
+                group_lyst.innerHTML += `<li>${word} &nbsp <button class="saved_button" onclick="saveClick(this)" style="color: white; background-color: green">(Save)</button></li>`;
             }
         }
 
